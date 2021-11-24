@@ -704,10 +704,13 @@ template {
     padding-bottom: 20px;
   }
   .hotel-info {
-    padding-right: 27px;
+    padding-right: 25px;
   }
   .hotel-info__name {
     padding-top: 7px;
+  }
+  .hotel-info__description {
+    margin-right: -16px;
   }
   .stars {
     padding-right: 5px;
