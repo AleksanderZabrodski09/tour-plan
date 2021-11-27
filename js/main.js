@@ -7,5 +7,9 @@ var Swiper = new Swiper('.swiper', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
-  effect: "flip"
+  effect: "flip",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });

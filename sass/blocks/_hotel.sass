@@ -28,11 +28,32 @@
   &-description
     font-size: 12px
     line-height: 15px
+.hotel-slider
+  width: 728px
+  height: 450px
+  margin: 0
+  position: relative
+  border-radius: 8px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 8px
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 10
+    border-radius: 8px
 
 .stars
   flex-basis: 100%
-
-.star
 
 .offer
   font-weight: 600
@@ -56,27 +77,13 @@
   &__counter
     font-size: 14px
     line-height: 18px
-.swiper
-  width: 728px
-  height: 450px
-  position: relative
-  border-radius: 8px
-  &-slide
+// .swiper
+//   max-width: 728px
+//   max-height: 450px
+//   position: relative
+//   border-radius: 8px
 
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    z-index: 10
 .slider
-  width: 728px
-  height: 450px
   &-button
     position: absolute
     top: 50%
@@ -90,11 +97,13 @@
     background-position: center
     background-size: 10px
     background-color: transparent
+    outline: none
     &--next
       right: 18px
       background-image: url(../img/arrow-next.svg)
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
-.slide-img
-  width: 728px
+.swiper-wrapper
+  width: 100%
+  height: 100%
