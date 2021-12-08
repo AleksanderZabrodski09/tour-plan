@@ -308,6 +308,10 @@ img {
   line-height: 18px;
 }
 
+.slider {
+  width: 728px;
+}
+
 .slider-button {
   position: absolute;
   top: 50%;
@@ -466,8 +470,8 @@ img {
 .map {
   width: 347px;
   height: 213px;
-  background-color: black;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -817,6 +821,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .hotel-slider {
+    width: 590px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -847,9 +854,27 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .hotel-slider {
     width: 100%;
-    height: 100%;
+    margin-bottom: 30px;
+  }
+  .hotel-desk {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking, .map {
+    width: 340px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 
@@ -914,6 +939,22 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .swiper {
+    height: 350px;
+  }
+  .hotel-desk {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+  }
+  .hotel-slider {
+    margin-bottom: 20px;
+  }
+  .booking, .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -934,6 +975,9 @@ template {
   }
   .stars {
     padding-right: 5px;
+  }
+  .swiper {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
