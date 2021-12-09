@@ -383,6 +383,7 @@ img {
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
+  margin-left: -5px;
 }
 
 .booking__per-room {
@@ -400,7 +401,8 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  margin-right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,6 +944,10 @@ template {
   .swiper {
     height: 350px;
   }
+  .slider-button {
+    width: 20px;
+    height: 20px;
+  }
   .hotel-desk {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -978,6 +984,31 @@ template {
   }
   .swiper {
     height: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  .swiper {
+    width: 279px;
+    height: 179px;
+  }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+  }
+  .hotel-info {
+    padding-bottom: 36px;
+  }
+  .hotel-desk {
+    height: 400px;
+  }
+  .booking {
+    width: 279px;
+    height: 210px;
+  }
+  .map {
+    width: 280px;
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
