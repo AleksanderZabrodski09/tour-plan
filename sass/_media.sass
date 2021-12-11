@@ -34,7 +34,19 @@
       margin-bottom: 30px
     &-desk
       flex-direction: row
-  .booking, .map
+  .booking
+    width: 340px
+    padding-left: 24px
+    &__pricetag
+      margin-left: -1px
+      margin-bottom: -2px
+    &__text
+      margin-right: -6px
+    &__number
+      margin-right: -6px
+    &__button
+      padding-left: 12px
+  .map
     width: 340px
 
   .slider
@@ -92,7 +104,9 @@
       height: 450px
     &-slider
       margin-bottom: 20px
-  .booking, .map
+  .booking
+    width: 100%
+  .map
     width: 100%
 @media (max-width: 576px)
   .logo
@@ -119,6 +133,14 @@
     &-button
       width: 12px
       height: 12px
+      &--prev
+        left: 6px
+        background-image: url(../img/small-arrow-prev.svg)
+        background-size: 5px 8px
+      &--next
+        right: 6px
+        background-image: url(../img/small-arrow-next.svg)
+        background-size: 5px 8px
   .hotel
     &-info
       padding-bottom: 36px
@@ -129,6 +151,9 @@
   .booking
     width: 279px
     height: 210px
+    &__button
+      width: 103%
+      padding-left: 8px
   .map
     width: 280px
     height: 172px
