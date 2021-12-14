@@ -1,0 +1,91 @@
+.reviews
+  padding: 40px 0 70px 0
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+  &-slider
+    &__item
+      position: relative
+      background-color: #ffffff
+      border-radius: 8px
+      display: flex
+      flex-direction: column
+      width: 730px
+      margin: 45px auto 0
+      align-items: center
+      padding: 0 95px 30px 99px
+      &::before
+        content: ''
+        position: absolute
+        top: 13px
+        left: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        top: 120px
+        right: 60px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      cursor: pointer
+      background-color: transparent
+      z-index: 99
+      outline: none
+      &--prev
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 32px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-top: -45px
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $color-primary
+      margin-top: 9px
+    &__date
+      font-size: 10px
+      line-height: 13px
+      color: $dark
+      margin-bottom: 4px
+    &__text
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: #333333
+    &__rating
+      display: flex
+      align-items: center
+    &__star
+      margin-left: 2px
