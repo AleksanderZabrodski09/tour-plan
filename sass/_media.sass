@@ -28,6 +28,11 @@
     &__input
       width: 340px
   .hotel
+    &-info
+      &__name
+        margin-top: -1px
+      &__rating
+        margin-top: 6px
     &-grid
       flex-direction: column
     &-slider
@@ -47,8 +52,11 @@
       margin-right: -6px
     &__number
       margin-right: -6px
+    &__call-center
+      margin-bottom: 20px
     &__button
-      padding-left: 12px
+      width: 102%
+      padding-left: 4px
   .map
     width: 340px
 
@@ -73,7 +81,7 @@
         margin-right: 0
         margin-left: 0
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -105,7 +113,7 @@
     &-wrapper
       justify-content: space-between
     &-info
-      &__ratting
+      &__rating
         display: none
       &__offer
         order: -1
@@ -114,13 +122,12 @@
         width: 100%
   .stars
     flex-basis: auto
-  .swiper
-    height: 350px
-  .slider
-    &-button
-      width: 20px
-      height: 20px
   .hotel
+    &-slider
+      height: 350px
+      &-button
+        width: 20px
+        height: 20px
     &-desk
       flex-direction: column
       height: 450px
@@ -187,9 +194,22 @@
   .subscribe
     width: 100%
   .reviews
+    &-slider
+      &__profile
+        margin-right: 16px
+      &__text
+        line-height: 159%
+        padding-right: 13px
+      &__button
+        &--next
+          margin-right: -82px
+        &--prev
+          margin-left: -98px
     &-title
       font-size: 18px
       line-height: 23px
+      padding: 0 38px 0 26px
+      margin-bottom: 41px
 @media (max-width: 320px)
   .hotel
     &-info
