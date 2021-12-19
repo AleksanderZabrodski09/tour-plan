@@ -1526,5 +1526,15 @@ template {
   .card {
     width: 280px;
   }
+  .activities-card:nth-child(3) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .activities-card:nth-child(1) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
