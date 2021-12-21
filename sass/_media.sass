@@ -99,6 +99,11 @@
     &__search, &-menu, &__user
       display: none
     &-top
+      &__menu
+        &-button
+          margin-right: 15px
+          margin-top: 7px
+
   .menu
     &-button
       display: flex
@@ -111,8 +116,6 @@
       border: none
       background-color: #ffffff
       cursor: pointer
-      margin-right: 15px
-      margin-top: 7px
       &__line
         width: 16px
         height: 1px
@@ -146,6 +149,8 @@
   .booking
     width: 100%
   .map
+    width: 100%
+  .iframe
     width: 100%
   .newsletter
     height: 319px
@@ -229,15 +234,27 @@
     &__title
       font-size: 18px
       line-height: 23px
-      margin-bottom: 37px
+      margin-bottom: 33px
 @media (max-width: 320px)
+  .container
+    max-width: 280px
+    width: 100%
+  .navbar
+    &-top
+      &__menu
+        &-button
+          margin-right: -4px
+          margin-top: 7px
   .hotel
     &-info
-      padding-bottom: 36px
+      padding-bottom: 40px
+      padding-right: 8px
     &-desk
       height: 400px
+      &__booking
+        margin-bottom: 20px
     &-slider
-      width: 279px
+      width: 280px
       height: 179px
       &-button
         width: 12px
@@ -250,18 +267,18 @@
           right: 6px
           background-image: url(../img/small-arrow-next.svg)
           background-size: 5px 8px
-
   .booking
-    width: 279px
+    width: 280px
     height: 210px
     &__button
       width: 103%
       padding-left: 8px
-  .map
-    width: 280px
-    height: 172px
   .newsletter
     padding: 59px 0 83px 0
+    &-wrapper
+      max-width: 276px
+      width: 100%
+      align-items: flex-start
     &-title
       font-size: 20px
       line-height: 25px
@@ -269,13 +286,35 @@
         font-size: 30px
         line-height: 38px
   .subscribe
-    width: 95%
+    width: 102%
     &__input
       padding-left: 20px
   .card
-    width: 280px
+    width: 278px
+  .reviews
+    &-title
+      padding: 0 38px 0 45px
+    &-slider
+      &__item
+        padding: 0 25px 30px 33px
+      &__avatar
+        margin-top: -44px
+        margin-right: 6px
+      &__username
+        margin-top: 9px
+      &__button
+        &--next
+          margin-right: -91px
+        &--prev
+          margin-left: -89px
   .activities
+    &-wrapper
+      justify-content: center
     &-card:nth-child(3)
       order: -1
+      margin-bottom: 28px
     &-card:nth-child(1)
-      order: -1
+      order: -2
+    &-card:nth-child(2)
+    &-card:last-child
+      margin-bottom: 0
