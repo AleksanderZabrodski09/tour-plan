@@ -10,20 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="./img/horizontal-logo.svg" alt="logo: Best tuor plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile-hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="button search__button">
             <img src="./img/search.svg" alt="icon: search">
           </button>
         </form>
 
-        <a class="user navbar__user" href="#">
+        <a class="user navbar__user navbar__user--mobile-hidden" href="#">
           <img src="./img/uswer-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -38,8 +38,21 @@
       
     </div>
     <!-- /.container -->
-    <div class="navbar-bottom">
+    <div class="navbar__bottom">
       <div class="container">
+        <div class="navbar-menu__item navbar-menu__item--mobile-visible">
+          <a class="user navbar__user navbar__user--mobile-visible" href="#">
+            <img src="./img/uswer-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
+            <span class="user__name navbar__user-name">Nathan</span></a>
+        </div>
+        <div class="navbar-menu__item navbar-menu__item--mobile-visible">
+            <form action="#" class="search navbar__search navbar__search--mobile-visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="button search__button">
+                <img src="./img/search.svg" alt="icon: search">
+              </button>
+            </form>
+        </div>
         <ul class="navbar-menu">
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>

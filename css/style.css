@@ -46,7 +46,7 @@ img {
   margin-left: 108px;
 }
 
-.navbar-bottom {
+.navbar__bottom {
   background-color: #0A223D;
 }
 
@@ -71,6 +71,10 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+}
+
+.navbar-menu__item--mobile-visible {
+  display: none;
 }
 
 .logo {
@@ -1674,12 +1678,81 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile-hidden, .navbar__search--mobile-hidden {
     display: none;
+  }
+  .navbar__user--mobile-visible, .navbar__search--mobile-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__bottom--visible {
+    display: block;
+  }
+  .navbar__search {
+    width: 243px;
+    margin: auto;
+    margin-top: 6px;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 19px;
+  }
+  .navbar-menu__item {
+    margin-top: 17px;
+  }
+  .navbar-menu__item--mobile-visible {
+    display: block;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 31px;
+    margin-bottom: 27px;
+  }
+  .navbar__user-name {
+    margin-top: 10px;
   }
   .navbar-top__menu-button {
     margin-right: 15px;
     margin-top: 7px;
+  }
+  .user__name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    margin-left: 0;
   }
   .menu-button {
     display: -webkit-box;
@@ -1838,9 +1911,6 @@ template {
   }
   .hotel-info__name {
     padding-top: 7px;
-  }
-  .hotel-info__description {
-    margin-right: -16px;
   }
   .hotel-info-slider {
     height: 250px;
