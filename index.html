@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="lock">
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
@@ -22,7 +22,6 @@
             <img src="./img/search.svg" alt="icon: search">
           </button>
         </form>
-
         <a class="user navbar__user navbar__user--mobile-hidden" href="#">
           <img src="./img/uswer-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
           <span class="user__name">Nathan</span>
@@ -56,7 +55,7 @@
         <ul class="navbar-menu">
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#activities" class="navbar-menu__link">Activities</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
@@ -298,7 +297,7 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title"><a name="activities"></a>Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities-card">
           <img src="img/activity-1.jpeg" alt="The curious corner 
@@ -342,7 +341,7 @@ of chamarel" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/Vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a href="#"><img src="img/Vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -372,9 +371,9 @@ of chamarel" class="card__image">
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__social-link"><img src="img/facebook.svg" alt="icon: facebook" class="footer__icon"></a>
-            <a href="#" class="footer__social-link"><img src="img/youtube.svg" alt="icon: youtube" class="footer__icon"></a>
-            <a href="#" class="footer__social-link"><img src="img/instagram.svg" alt="icon: instagram" class="footer__icon"></a>
+            <a href="https://www.facebook.com/" class="footer__social-link"><img src="img/facebook.svg" alt="icon: facebook" class="footer__icon"></a>
+            <a href="https://www.youtube.com/" class="footer__social-link"><img src="img/youtube.svg" alt="icon: youtube" class="footer__icon"></a>
+            <a href="https://www.instagram.com/" class="footer__social-link"><img src="img/instagram.svg" alt="icon: instagram" class="footer__icon"></a>
           </div>
         </div>
         <!-- /.footer__social-network -->
@@ -401,9 +400,9 @@ of chamarel" class="card__image">
               <div class="footer__icon-wrapper"><img src="img/contact-phone-call.svg" alt="icon: Tel-number" class="footer__icon-contact">
               </div>
               <div class="footer__link-phone">
-                <a href="tel:2691500" class="footer__link">Tel (business hours) : 269 1500</a>
-                <a href="tel:5256613" class="footer__link">Tel (hotline) Monday - Saturday: &nbsp;52-&nbsp;56-61-38 (08:00 am – 20:00 pm)</a>
-                <a href="tel:52566138" class="footer__link">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
+                <p class="footer__link--request">Tel (business hours) :<a href="tel:2691500" class="footer__link">269 1500</a></p>
+                <p class="footer__link--request">Tel (hotline) Monday - Saturday: <a href="tel:5256613" class="footer__link footer__link--nowrap">52-56-61-38</a> (08:00 am – 20:00 pm)</p>
+                <p class="footer__link--request">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)</p>
               </div>
             </li>
             <li class="footer__item footer__item--contact">

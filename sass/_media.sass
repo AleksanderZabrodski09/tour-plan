@@ -159,6 +159,9 @@
     &-wrapper
       margin-left: 0
 @media ( max-width: 767px)
+  body
+    .lock
+      overflow: hidden
   .container
     max-width: 576px
     width: 92%
@@ -185,6 +188,8 @@
       right: 0
       bottom: 0
       top: 78px
+      overflow: auto
+      max-hight: 80vh
       flex-direction: column
       &--visible
         display: block
@@ -192,7 +197,6 @@
       width: 243px
       margin: auto
       margin-top: 6px
-
     &-menu
       flex-direction: column
       padding-top: 19px
@@ -208,7 +212,6 @@
       margin-bottom: 27px
       &-name
         margin-top: 10px
-
     &-top
       &__menu
         &-button
@@ -305,6 +308,8 @@
       grid-template-columns: 1fr 1fr 1fr
     &__additional
       padding-left: 0
+    &__legal
+      margin-left: 9px
     &__input
       flex-basis: 100%
       width: 100%
@@ -314,7 +319,10 @@
       width: 100%
     &__info
       margin-left: 168px
-
+@media ( max-width: 620px)
+  .footer
+    &__legal
+      margin-left: 15px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -368,7 +376,7 @@
       line-height: 23px
       margin-bottom: 33px
   .footer
-    padding: 87px 0 17px 0
+    padding: 66px 0 17px 0
     &-wrapper
       grid-template-columns: 1fr
       grid-auto-rows: minmax(29px, min-content)
@@ -382,6 +390,7 @@
     &__item
       &--conditions
         margin-right: 7px
+        align-items: center
       &--inline
         margin-bottom: 20px
     &__logo
@@ -405,6 +414,7 @@
     &__legal
       grid-row: 4
       grid-column: 1
+      margin-left: 0
     &__contact
       &-details
         grid-row: 10
@@ -518,6 +528,7 @@
         &--prev
           margin-left: -89px
   .activities
+    padding: 31px 0 60px 0
     &-wrapper
       justify-content: center
     &-card:nth-child(3)
@@ -528,3 +539,19 @@
     &-card:nth-child(2)
     &-card:last-child
       margin-bottom: 0
+// @media ( max-hight: 514px)
+//   .container
+//     overflow-y: scroll
+//     height: 80vh
+//   .navbar
+//     &__bottom
+//       &--visible
+//         height: 80vh
+//         overflow-y: scroll
+//   .navbar
+//     &-menu
+//       &__item
+//         &--mobile
+//           &-visible
+//             height: 80vh
+//             overflow-y: scroll
