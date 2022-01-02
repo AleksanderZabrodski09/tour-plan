@@ -196,8 +196,8 @@
       <h2 class="newsletter-title">subscribe to our<span class="newsletter-title__strong">Newsletter</span>
       </h2>
       
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" class="subscribe newsletter__subscribe">
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
         <button class="button subscribe__button">Send</button>
       </form>
     </div>
@@ -415,10 +415,10 @@ of chamarel" class="card__image">
         <!-- /.footer__contact-details -->
         <div class="footer__contact-message">
           <h3 class="footer__title footer__title--message">Send us a message</h3>
-          <form action="#" class="footer__message">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="tel" class="input footer__input" placeholder="Phone Number*">
-            <textarea class="textarea footer__textarea" placeholder="Message"></textarea>
+          <form action="send.php" class="footer__message" method="POST">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
