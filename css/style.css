@@ -20,6 +20,7 @@ img {
 }
 
 .input {
+  min-width: 254px;
   height: 50px;
   font-weight: normal;
   font-size: 12px;
@@ -46,13 +47,10 @@ img {
 }
 
 .button {
-  min-width: 150px;
-  min-height: 50px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
-  padding: 18px 65px;
   background-color: #EC1F46;
   border-radius: 4px;
   cursor: pointer;
@@ -71,6 +69,10 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.invalid {
+  color: #EC1F46;
 }
 
 .navbar {
@@ -163,7 +165,7 @@ img {
   width: 65px;
   height: 100%;
   border: none;
-  background: #EC1F46;
+  border-radius: 0 4px 4px 0;
 }
 
 .user {
@@ -376,6 +378,7 @@ img {
   padding: 4px 9px;
   background: #EC1F46;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .rating {
@@ -385,6 +388,7 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -624,11 +628,11 @@ img {
   top: 0;
   height: 100%;
   border: none;
-  background-color: #EC1F46;
   color: #ffffff;
   min-width: 65px;
   font-size: 12px;
   line-height: 15px;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1081,6 +1085,10 @@ img {
   margin-bottom: 23px;
 }
 
+.footer__button {
+  padding: 18px 65px;
+}
+
 .footer__conditions {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
@@ -1136,7 +1144,7 @@ img {
 
 .modal__dialog {
   position: fixed;
-  top: 50%;
+  top: 46%;
   left: 50%;
   max-width: 478px;
   padding: 33px 88px;
@@ -1164,14 +1172,24 @@ img {
   cursor: pointer;
 }
 
+.modal__message {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .modal__input {
-  margin-bottom: 15px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.modal__input-group {
   width: 100%;
 }
 
 .modal__textarea {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1187,7 +1205,12 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 0;
+}
+
+.modal__button {
+  padding: 18px 65px;
+  margin-top: 15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1544,6 +1567,13 @@ template {
     width: 225px;
     height: 225px;
   }
+  .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__title--legal {
     padding-left: 48px;
   }
@@ -1673,11 +1703,11 @@ template {
     grid-auto-rows: minmax(50px, min-content);
     grid-gap: 0px;
   }
-  .footer__input {
+  .footer__input-group {
     max-width: 255px;
     margin-right: 30px;
   }
-  .footer__input:nth-child(2) {
+  .footer__input-group:nth-child(2) {
     margin-right: 0;
   }
   .footer__logo {
@@ -1765,6 +1795,9 @@ template {
   }
   .conditions-wrapper {
     margin-left: 0;
+  }
+  .modal__dialog {
+    padding: 33px 60px;
   }
 }
 
@@ -1987,7 +2020,7 @@ template {
   .footer__legal {
     margin-left: 9px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 100%;
@@ -1999,6 +2032,9 @@ template {
   }
   .footer__info {
     margin-left: 168px;
+  }
+  .modal__dialog {
+    width: 100%;
   }
 }
 
@@ -2205,6 +2241,18 @@ template {
   }
   .footer__pay {
     margin-top: 11px;
+  }
+  .modal__dialog {
+    width: 98%;
+    padding: 33px 30px;
+  }
+  .modal__info {
+    font-size: 11px;
+  }
+  .input {
+    min-width: none;
+    width: 100%;
+    min-width: 0;
   }
 }
 

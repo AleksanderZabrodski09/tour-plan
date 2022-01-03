@@ -64,5 +64,27 @@ $(document).ready(function () {
   // $(document).on("keydown"), function(event) {
   //   if (event.keyCode == 27) {
   //     window.close();
-  // }
+
+  // Обработка форм
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlenght: "Your must be at least 2 letters"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Your phone is required",
+        },
+      },
+    });
+  });
+  $(".input").ready(function() {
+    $('#phone').mask('+7(999) 999-99-99');
+  });
 });
