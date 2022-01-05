@@ -84,7 +84,9 @@ $(document).ready(function () {
       },
     });
   });
-  $(".input").ready(function() {
-    $('#phone').mask('+7(999) 999-99-99');
-  });
+  // $(".input").each(function() {
+  //   $('#phone').mask('+7(999) 999-99-99');
+  // });
+  $('.phone').mask('+7 (999) 999-99-99', {
+    'translation': { 9: {pattern: /[0-9]/}}});
 });

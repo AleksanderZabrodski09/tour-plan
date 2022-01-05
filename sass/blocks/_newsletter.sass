@@ -39,23 +39,32 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+.form
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    height: 75px
 .subscribe
   position: relative
   width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
+  // overflow: hidden
   color: $footer-contact-link
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-end
   &__input
-    position: absolute
+    // position: absolute
     width: 100%
-    height: 100%
+    height: 55px
     border: none
     padding-left: 33px
     padding-right: 75px
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    // flex-basis: 100%
   &__button
     position: absolute
     right: 0
