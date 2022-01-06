@@ -8,16 +8,20 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-if (isset($_POST['email']));
 $email = $_POST['email'];
+if (isset($_POST['newsletter'])){
+    $body = "email: $email";
+} else {
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+};
 // Формирование самого письма
 $title = "Новое обращание Best Tour Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
