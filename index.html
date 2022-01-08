@@ -7,22 +7,25 @@
   <title>Best tour plan - Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="lock">
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://alex-zabrodski.com/Best-tour-plan/" class="logo">
+        <a href="https://alex-zabrodski.com/Best-tour-plan/" class="logo" 
+        data-aos="fade-right"
+        data-aos-delay="100">
           <img src="./img/horizontal-logo.svg" alt="logo: Best tuor plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile-hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile-hidden" data-aos="fade-right" data-aos-delay="300">
           <input type="text" class="search__input" placeholder="Search Location" required>
           <button class="button search__button">
             <img src="./img/search.svg" alt="icon: search">
           </button>
         </form>
-        <a class="user navbar__user navbar__user--mobile-hidden" href="#">
+        <a class="user navbar__user navbar__user--mobile-hidden" href="#" data-aos="fade-left" data-aos-delay="500">
           <img src="./img/uswer-avatar.jfif" alt="Avatar: Nathan" class="avatar user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -196,12 +199,12 @@
       <h2 class="packages-title">Other Packages</h2>
       <div class="packages-wrapper">
         <div class="packages__item packages__item--big">
-          <div class="packages__foto packages__foto--big">
+          <div class="packages__foto packages__foto--big" data-aos="flip-left" data-aos-delay="100">
             <img src="img/hotel-blue_1.jpeg" alt="Hotel Blue Haven" class="packages__image">
             <span class="packages-offer packages-offer--big card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card packages-card--big">
+          <div class="packages-card packages-card--big" data-aos="flip-left" data-aos-delay="300">
             <div class="wrapper__title-stars">
               <div class="stars packages__stars">
                 <img class="star packages__star" src="./img/Star.svg" alt="Star">
@@ -243,12 +246,12 @@
         </div>
         <!-- /.packages__item packages__item--big -->
         <div class="packages__item">
-          <div class="packages__foto">
+          <div class="packages__foto" data-aos="flip-right" data-aos-delay="500">
             <img src="img/hotel-lux_3.jpg" alt="LUX* Belle Mare" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="flip-right" data-aos-delay="600">
             <h3 class="packages-card__title">LUX* Belle Mare</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -279,12 +282,12 @@
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto">
+          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="100">
             <img src="img/hotel-palace__4.jpeg" alt="White Palace" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="200">
             <h3 class="packages-card__title">White Palace</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -315,12 +318,12 @@
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto">
+          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="300">
             <img src="img/hotel-LPlace__5.jpg" alt="Luxury Place" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="400">
             <h3 class="packages-card__title">Luxury Place</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -351,12 +354,12 @@
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto">
+          <div class="packages__foto"data-aos="zoom-out-up" data-aos-delay="500">
             <img src="img/hotel-five__6.jpg" alt="Hotel Five Star" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="600">
             <h3 class="packages-card__title">Hotel Five Star</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -503,22 +506,22 @@
     <div class="container">
       <h2 class="activities__title"><a name="activities"></a>Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities-card">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-1.jpeg" alt="The curious corner 
 of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="400">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="600">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day
           
@@ -526,15 +529,15 @@ of chamarel" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day
             
             </h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="800">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -696,6 +699,7 @@ of chamarel" class="card__image">
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -91,4 +91,6 @@ $(document).ready(function () {
   $('.phone').mask('+7 (999) 999-99-99', {
     'translation': { 9: {pattern: /[0-9]/}}});
   // $('.phone').mask('+7 (999) 999-99-99');
+  
+  AOS.init();
 });
