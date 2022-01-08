@@ -72,7 +72,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlenght: "Your must be at least 2 letters"
+          minlength: jQuery.validator.format("Your name must have at least 2&nbsp;letter!"),
         },
         email: {
           required: "We need your email address to contact you",
@@ -80,6 +80,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Your phone is required",
+          minlength: jQuery.validator.format("You mast have at least 11 digits required!"),
         },
       },
     });
@@ -89,4 +90,5 @@ $(document).ready(function () {
   // });
   $('.phone').mask('+7 (999) 999-99-99', {
     'translation': { 9: {pattern: /[0-9]/}}});
+  // $('.phone').mask('+7 (999) 999-99-99');
 });
