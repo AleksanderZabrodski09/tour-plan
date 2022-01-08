@@ -2520,6 +2520,8 @@ template {
   .modal__dialog {
     width: 98%;
     padding: 33px 30px;
+    overflow: auto;
+    max-height: 90vh;
   }
   .modal__info {
     font-size: 11px;

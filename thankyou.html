@@ -81,19 +81,28 @@
   <!-- /.breadcrumb -->
   <section class="hotel">
     <div class="container">
-      <div class="hotel-info">
+      <div class="hotel-info" style="justify-content: center;">
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
 
-            <h1 class="hotel-name hotel-info__name">The message was sent</h1>
+            <h1 class="hotel-name hotel-info__name" style="color: firebrick; text-transform: uppercase;" >The message was sent!.</h1>
           </div>
           <!-- /.hotel-wrapper -->
-          <p class="hotel-description hotel-info__description">
+          <p class="hotel-description hotel-info__description" style="color: rgb(34, 178, 58); text-transform: uppercase;">
             Our manager will call in 5 minutes
           </p>
         </div>
           <!-- /hotel-info__text -->
+        <div class="booking hotel-desk__booking" style="min-height: 100%; width: 272px;">
+          <div class="booking__call-center" style="justify-content: center;">
+            <span class="booking__book" style="text-align: center;">Go back to the main page?</span>
+            <a href="tel:12100" class="booking__number">
 
+            </a>
+          </div>
+          <!-- /.call-center -->
+          <a data-toggle="modal" href="https://alex-zabrodski.com/Best-tour-plan/" class="button booking__button" style="padding: 15px 95px;">click</a>
+        </div>
         <!-- /rating hotel-info__rating -->
       </div>
       <!-- /.hotel-info -->
@@ -182,17 +191,6 @@
           </ul>
         </div>
         <!-- /.footer__contact-details -->
-        <div class="footer__contact-message">
-          <h3 class="footer__title footer__title--message">Send us a message</h3>
-          <form action="send.php" class="footer__message" method="POST">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button">Send</button>
-            <span class="footer__info">* Required Fields</span>
-          </form>
-        </div>
-        <!-- /.footer__contact-message -->
         <div class="footer__conditions">
           <ul class="footer__ul conditions-wrapper">
             <li class="footer__item footer__item--conditions"><a href="#" class="footer__link">Disclaimer</a></li>
