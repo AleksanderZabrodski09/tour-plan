@@ -17,7 +17,6 @@ img
   font-weight: normal
   font-size: 12px
   line-height: 15px
-  color: $footer-contact-link
   padding: 0 23px
   background-color: $light
   border: none
@@ -36,6 +35,23 @@ img
   font-size: 12px
   line-height: 15px
 
+input, textarea
+  &::placeholder
+    font-size: 14px
+    color: $footer-contact-link
+  &::-webkit-input-placeholder
+    font-size: 14px
+    color: $footer-contact-link
+  &::-moz-placeholder
+    font-size: 14px
+    color: $footer-contact-link
+  &:-ms-input-placeholder
+    font-size: 14px
+    color: $footer-contact-link
+  &:-moz-placeholder
+    font-size: 14px
+    color: $footer-contact-link
+
 .button
   // min-width: 150px
   // min-height: 50px
@@ -49,7 +65,6 @@ img
   border: none
 .message
   display: flex
-  align-items: center
   justify-content: space-between
   flex-wrap: wrap
 
