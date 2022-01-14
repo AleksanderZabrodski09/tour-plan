@@ -1,5 +1,5 @@
 .packages
-  padding: 107px 0 0 0
+  padding: 107px 0 70px 0
   &-title
     font-style: normal
     font-weight: bold
@@ -100,16 +100,16 @@
   &__price
     display: grid
     margin-bottom: 6px
-    &--old
-      &-price
-        font-size: 14px
-        line-height: 18px
-        text-decoration-line: line-through
-    &--new
-      &-price
-        font-weight: bold
-        font-size: 24px
-        line-height: 30px
+  &__old
+    &-price
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+  &__new
+    &-price
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
   &__button
     font-weight: 600
     font-size: 14px
@@ -122,12 +122,10 @@
     grid-template: 1fr / auto 1fr
     grid-gap: 16px
     margin-bottom: 11px
-.wrapper
-  &__price
+.packages
+  &__wrap
     display: grid
     grid-template-columns: 1fr 1fr
     justify-items: start
     align-items: end
     column-gap: 51px
-  &__title
-    &-stars

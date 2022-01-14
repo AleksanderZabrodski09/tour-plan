@@ -22,13 +22,67 @@
       grid-gap: 20px
     &-card
       // padding-bottom: 90%
+// @media (hover: hover) and (pointer: fine)
+@media (min-width: 992px)
+  .button
+    &:hover
+      transition: 0.2s
+      background-color: $color-hover
+    &:active
+      transition: 0.1s
+      background-color: $color-active
+      color: $dark
+      border: 1px solid #7fbed5
+      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+      box-shadow: 0px 0px 20px -1px #7fbed5ed
+  a
+    transition: 0.2s
+    &:hover
+      transform: translateY(-3px)
+      color: $color-primary
+  .navbar
+    &__user
+      &:hover
+        transform: translateY(-3px)
+    &-menu
+      &__item
+        &:hover
+          transform: translateY(-3px)
+  .rating
+    &:hover
+      transition: 0.2s
+      transform: translateY(-3px)
+      background-color: $color-hover
+    &:active
+      transition: 0.1s
+      background-color: $color-active
+      color: $dark
+      border: 1px solid #7fbed5
+      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+      box-shadow: 0px 0px 20px -1px #7fbed5ed
+  .user
+    transition: 0.1s
+    &:hover
+      transform: translateY(-3px)
+    &__name
+      &:hover
+        color: $color-primary
+  .input
+    &:hover
+      background-color: $color-inp
+  .textarea
+    &:hover
+      background-color: $color-inp
+
 @media (max-width: 992px)
   .packages
+    padding-bottom: 54px
     &-wrapper
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
       grid-auto-rows: minmax(500px, min-content)
-  .wrapper
-    &__price
+    &__wrap
       display: block
   .container, .newsletter-wrapper
     max-width: 700px
@@ -42,9 +96,10 @@
       margin: auto
       margin-left: 48px
     &-menu
-      justify-content: space-around
-      padding-top: 21px
-      padding-bottom: 23px
+      &__ul
+        justify-content: space-around
+        padding-top: 21px
+        padding-bottom: 23px
       &__link
         font-size: 12px
         line-height: 15px
@@ -83,9 +138,6 @@
       padding-left: 4px
   .map
     width: 340px
-  .container
-    &__newsletter
-      margin-top: 54px
   .newsletter
     padding: 72px 0 87px 0
   .reviews
@@ -194,13 +246,12 @@
   body
     padding-top: 78px
   .navbar
-    &__mobile
-      &--fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        z-index: 99
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
     &__user, &__search
       &--mobile
         &-hidden
@@ -224,8 +275,9 @@
       margin: auto
       margin-top: 6px
     &-menu
-      flex-direction: column
-      padding-top: 19px
+      &__ul
+        flex-direction: column
+        padding-top: 19px
       &__item
         margin-top: 17px
         &--mobile
@@ -268,7 +320,7 @@
         background-color: $text-color
   .packages
     grid-template-columns: 1fr
-    padding: 55px 0 0 0
+    padding: 55px 0 54px 0
     &-title
       font-size: 26px
       line-height: 34px
@@ -406,8 +458,8 @@
         height: 250px
   .stars
     padding-right: 5px
-  .container__newsletter
-    margin-top: 43px
+  .packages
+    padding-bottom: 43px
   .newsletter
     padding: 76px 0 83px 0
     &-title
@@ -525,7 +577,8 @@
       margin-top: 11px
   .modal
     &__dialog
-      width: 98%
+      max-width: none
+      width: 94%
       padding: 33px 30px
       overflow: auto
       max-height: 90vh
@@ -623,19 +676,3 @@
     &__social
       &-links
         margin-bottom: 0
-// @media ( max-hight: 514px)
-//   .container
-//     overflow-y: scroll
-//     height: 80vh
-//   .navbar
-//     &__bottom
-//       &--visible
-//         height: 80vh
-//         overflow-y: scroll
-//   .navbar
-//     &-menu
-//       &__item
-//         &--mobile
-//           &-visible
-//             height: 80vh
-//             overflow-y: scroll
