@@ -5,19 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best tour plan - Hotel Booking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="preload">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="preload" as>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="lock">
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://alex-zabrodski.com/Best-tour-plan/" class="logo" 
-        data-aos="fade-right"
-        data-aos-delay="100">
-          <img src="./img/horizontal-logo.svg" alt="logo: Best tuor plan" class="logo__image">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100"><img src="./img/horizontal-logo.svg" alt="logo: Best tuor plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile-hidden" data-aos="fade-right" data-aos-delay="300">
           <input type="text" class="search__input input" placeholder="Search Location" required>
@@ -40,7 +39,7 @@
       
     </div>
     <!-- /.container -->
-    <div class="navbar__bottom">
+    <div class="navbar__bottom navbar-menu">
       <div class="container">
         <div class="navbar-menu__item navbar-menu__item--mobile-visible">
           <a class="user navbar__user navbar__user--mobile-visible" href="#">
@@ -55,10 +54,10 @@
               </button>
             </form>
         </div>
-        <ul class="navbar-menu">
+        <ul class="navbar-menu__ul">
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-          <li class="navbar-menu__item"><a href="#activities" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
@@ -101,7 +100,7 @@
           <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
           <!-- /hotel-info__text -->
-        <div data-toggle="modal" data-href="#rating__modal"  date-keyboard="true" class="rating hotel-info__rating">
+        <div data-toggle="modal" data-href="#rating__modal" class="rating hotel-info__rating">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/<small>5</small></span>
         </div>
@@ -206,13 +205,13 @@
       <h2 class="packages-title">Other Packages</h2>
       <div class="packages-wrapper">
         <div class="packages__item packages__item--big">
-          <div class="packages__foto packages__foto--big" data-aos="flip-left" data-aos-delay="100">
+          <div class="packages__foto packages__foto--big" data-aos="flip-left" data-aos-delay="50">
             <img src="img/hotel-blue_1.jpeg" alt="Hotel Blue Haven" class="packages__image">
             <span class="packages-offer packages-offer--big card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card packages-card--big" data-aos="flip-left" data-aos-delay="300">
-            <div class="wrapper__title-stars">
+          <div class="packages-card packages-card--big" data-aos="flip-left" data-aos-delay="70">
+            <div class="packages__title-stars">
               <div class="stars packages__stars">
                 <img class="star packages__star" src="./img/Star.svg" alt="Star">
                 <img class="star packages__star" src="./img/Star.svg" alt="Star">
@@ -222,7 +221,7 @@
               </div>
               <h3 class="packages-card__title packages-card__title--big">Hotel Blue Haven</h3>
             </div>
-            <!-- /.wrapper__title-stars -->
+            <!-- /.packages__title-stars -->
             <p class="packages-text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
             <div class="packages__room packages__room--big">
               <div class="packages__info">
@@ -239,26 +238,26 @@
               </div>
             </div>
             <!-- /.packages__room -->
-            <div class="wrapper__price">
+            <div class="packages__wrap">
               <div class="packages__price">
-                <span class="packages__price--old-price">$ 10,500</span>
-                <strong class="packages__price--new-price">$ 8,500</strong>
+                <span class="packages__old-price">$ 10,500</span>
+                <strong class="packages__new-price">$ 8,500</strong>
               </div>
               <!-- /.packages__price -->
-              <button class="button packages__button packages__button--big">Book Now</button>
+              <button class="button packages__button packages__button--big" data-toggle="modal" data-href="#booking__modal">Book Now</button>
             </div>
-            <!-- /.wrapper__price -->
+            <!-- /.packages__wrap -->
           </div>
           <!-- /.packages-card -->
         </div>
-        <!-- /.packages__item packages__item--big -->
+        <!-- /.packages__item packages__item-big -->
         <div class="packages__item">
-          <div class="packages__foto" data-aos="flip-right" data-aos-delay="500">
+          <div class="packages__foto" data-aos="flip-right" data-aos-delay="50">
             <img src="img/hotel-lux_3.jpg" alt="LUX* Belle Mare" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card" data-aos="flip-right" data-aos-delay="600">
+          <div class="packages-card" data-aos="flip-right" data-aos-delay="70">
             <h3 class="packages-card__title">LUX* Belle Mare</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -275,26 +274,26 @@
               </div>
             </div>
             <!-- /.packages__room -->
-            <div class="wrapper__price">
+            <div class="packages__wrap">
               <div class="packages__price">
-                <span class="packages__price--old-price">$ 8,500</span>
-                <strong class="packages__price--new-price">$ 3,000</strong>
+                <span class="packages__old-price">$ 8,500</span>
+                <strong class="packages__new-price">$ 3,000</strong>
               </div>
               <!-- /.packages__price -->
-              <button class="button packages__button">Book Now</button>
+              <button class="button packages__button" data-toggle="modal" data-href="#booking__modal">Book Now</button>
             </div>
-            <!-- /.wrapper__price -->
+            <!-- /.packages__wrap -->
           </div>
           <!-- /.packages-card -->
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="100">
+          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="50">
             <img src="img/hotel-palace__4.jpeg" alt="White Palace" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="200">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="70">
             <h3 class="packages-card__title">White Palace</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -311,26 +310,26 @@
               </div>
             </div>
             <!-- /.packages__room -->
-            <div class="wrapper__price">
+            <div class="packages__wrap">
               <div class="packages__price">
-                <span class="packages__price--old-price">$ 10,500</span>
-                <strong class="packages__price--new-price">$ 9,500</strong>
+                <span class="packages__old-price">$ 10,500</span>
+                <strong class="packages__new-price">$ 9,500</strong>
               </div>
               <!-- /.packages__price -->
-              <button class="button packages__button">Book Now</button>
+              <button class="button packages__button" data-toggle="modal" data-href="#booking__modal">Book Now</button>
             </div>
-            <!-- /.wrapper__price -->
+            <!-- /.packages__wrap -->
           </div>
           <!-- /.packages-card -->
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="300">
+          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="100">
             <img src="img/hotel-LPlace__5.jpg" alt="Luxury Place" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="400">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="130">
             <h3 class="packages-card__title">Luxury Place</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -347,26 +346,26 @@
               </div>
             </div>
             <!-- /.packages__room -->
-            <div class="wrapper__price">
+            <div class="packages__wrap">
               <div class="packages__price">
-                <span class="packages__price--old-price">$ 4,500</span>
-                <strong class="packages__price--new-price">$ 2,500</strong>
+                <span class="packages__old-price">$ 4,500</span>
+                <strong class="packages__new-price">$ 2,500</strong>
               </div>
               <!-- /.packages__price -->
-              <button class="button packages__button">Book Now</button>
+              <button class="button packages__button" data-toggle="modal" data-href="#booking__modal">Book Now</button>
             </div>
-            <!-- /.wrapper__price -->
+            <!-- /.packages__wrap -->
           </div>
           <!-- /.packages-card -->
         </div>
         <!-- /.packages__item -->
         <div class="packages__item">
-          <div class="packages__foto"data-aos="zoom-out-up" data-aos-delay="500">
+          <div class="packages__foto" data-aos="zoom-out-up" data-aos-delay="100">
             <img src="img/hotel-five__6.jpg" alt="Hotel Five Star" class="packages__image">
             <span class="packages-offer card-offer">Flash Offer</span>
           </div>
           <!-- /.packages__foto -->
-          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="600">
+          <div class="packages-card" data-aos="zoom-out-down" data-aos-delay="130">
             <h3 class="packages-card__title">Hotel Five Star</h3>
             <div class="packages__room">
               <div class="packages__info">
@@ -383,15 +382,15 @@
               </div>
             </div>
             <!-- /.packages__room -->
-            <div class="wrapper__price">
+            <div class="packages__wrap">
               <div class="packages__price">
-                <span class="packages__price--old-price">$ 6,500</span>
-                <strong class="packages__price--new-price">$ 3,500</strong>
+                <span class="packages__old-price">$ 6,500</span>
+                <strong class="packages__new-price">$ 3,500</strong>
               </div>
               <!-- /.packages__price -->
-              <button class="button packages__button">Book Now</button>
+              <button class="button packages__button" data-toggle="modal" data-href="#booking__modal">Book Now</button>
             </div>
-            <!-- /.wrapper__price -->
+            <!-- /.packages__wrap -->
           </div>
           <!-- /.packages-card -->
         </div>
@@ -402,7 +401,7 @@
     <!-- /.container -->
   </section>
   <!-- /.packages -->
-  <section class="newsletter container__newsletter">
+  <section class="newsletter">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title">subscribe to our<span class="newsletter-title__strong">Newsletter</span>
       </h2>
@@ -475,9 +474,8 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img 
-                src="img/avatar-reviews-3.jpg
-                g" 
+                <img
+                src="img/avatar-reviews-3.jpg"
                 alt="Photo: Nina Le" 
                 class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Nina Le</h3>
@@ -512,24 +510,24 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title"><a name="activities"></a>Other Activities</h2>
+      <h2 class="activities__title"><a id="activities"></a>Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="50">
           <img src="img/activity-1.jpeg" alt="The curious corner 
 of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
+          <button class="button card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="80">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
-          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
+          <button class="button card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="50">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day
           
@@ -537,15 +535,15 @@ of chamarel" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day
             
             </h3>
-          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
+          <button class="button card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities-card" data-aos="fade-up" data-aos-delay="800">
+        <div class="card activities-card" data-aos="fade-up" data-aos-delay="80">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
-          <button class="card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
+          <button class="button card__button" data-toggle="modal" data-href="#rating__modal">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -615,9 +613,9 @@ of chamarel" class="card__image">
               <div class="footer__icon-wrapper"><img src="img/contact-phone-call.svg" alt="icon: Tel-number" class="footer__icon-contact">
               </div>
               <div class="footer__link-phone">
-                <p class="footer__link--request">Tel (business hours) :<a href="tel:2691500" class="footer__link">269 1500</a></p>
-                <p class="footer__link--request">Tel (hotline) Monday - Saturday: <a href="tel:5256613" class="footer__link footer__link--nowrap">52-56-61-38</a> (08:00 am – 20:00 pm)</p>
-                <p class="footer__link--request">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)</p>
+                <p class="footer__link-request">Tel (business hours) :<a href="tel:2691500" class="footer__link">269 1500</a></p>
+                <p class="footer__link-request">Tel (hotline) Monday - Saturday: <a href="tel:5256613" class="footer__link footer__link--nowrap">52-56-61-38</a> (08:00 am – 20:00 pm)</p>
+                <p class="footer__link-request">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)</p>
               </div>
             </li>
             <li class="footer__item footer__item--contact">
@@ -635,7 +633,7 @@ of chamarel" class="card__image">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone"id="#phone" required minlength="18">
+              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" id="#phone" required minlength="18">
             </div>
             <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
@@ -666,7 +664,7 @@ of chamarel" class="card__image">
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img src="img/close.svg"alt="icon: close">
+        <img src="img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title--message">Booking</h3>
       <form action="send.php" class="modal__message message form" method="POST">
@@ -688,7 +686,7 @@ of chamarel" class="card__image">
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img src="img/close.svg"alt="icon: close">
+        <img src="img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title--message">Send us a feedback</h3>
       <form action="send.php" class="modal__message message form" method="POST">
