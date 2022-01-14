@@ -49,10 +49,26 @@
       &__item
         &:hover
           transform: translateY(-3px)
+  .hotel
+    &__back
+      &-button
+        &:hover
+          transition: 0.2s
+          transform: none
+          background-color: $color-hover
+          color: $light
+        &:active
+          transition: 0.1s
+          background-color: $color-active
+          color: $dark
+          border: 1px solid #7fbed5
+          -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+          -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+          box-shadow: 0px 0px 20px -1px #7fbed5ed
   .rating
     &:hover
       transition: 0.2s
-      transform: translateY(-3px)
+      transform: none
       background-color: $color-hover
     &:active
       transition: 0.1s
@@ -588,6 +604,17 @@
     min-width: none
     width: 100%
     min-width: 0
+  .hotel
+    &__thanks
+      width: 100%
+      &-for
+        font-size: 25px
+    &__description
+      font-size: 14px
+    &__back
+      &-button
+        width: 100%
+        padding: 23px 109px
 @media (max-width: 320px)
   .container
     max-width: 280px
