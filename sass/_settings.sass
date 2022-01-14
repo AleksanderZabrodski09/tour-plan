@@ -35,19 +35,52 @@ img
   font-size: 12px
   line-height: 15px
 
+.message
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
 .input, .textarea
   &::-webkit-input-placeholder
     font-size: 14px
     color: $footer-contact-link
+  &:-moz-placeholder
+    font-size: 14px
+    color: $footer-contact-link
+    opacity: 1
   &::-moz-placeholder
     font-size: 14px
     color: $footer-contact-link
+    opacity: 1
   &:-ms-input-placeholder
     font-size: 14px
     color: $footer-contact-link
   &::placeholder
     font-size: 14px
     color: $footer-contact-link
+
+// .input:-moz-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
+//   opacity: 1
+// .textarea:-moz-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
+//   opacity: 1
+// .input::-moz-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
+//   opacity: 1
+// .textarea::-moz-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
+//   opacity: 1
+// .input::-webkit-input-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
+// .textarea::-webkit-input-placeholder
+//   font-size: 14px
+//   color: $footer-contact-link
 
 .button
   // min-width: 150px
@@ -60,9 +93,5 @@ img
   border-radius: 4px
   cursor: pointer
   border: none
-.message
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
 .invalid
   color: $color-primary
