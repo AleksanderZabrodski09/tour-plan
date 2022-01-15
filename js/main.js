@@ -31,7 +31,7 @@ $(document).ready(function () {
   
   var menuButton = $(".menu-button");
   menuButton.on('click', function () {
-    console.log("Клик по кнопке меню");
+    // console.log("Клик по кнопке меню");
     $(".navbar__bottom")
       .toggleClass("navbar__bottom--visible");
     document
