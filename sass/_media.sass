@@ -36,6 +36,37 @@
       -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
       -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
       box-shadow: 0px 0px 20px -1px #7fbed5ed
+
+  .hotel
+    &-slider
+      &__button
+        &--prev
+          &:hover
+            transition: 0.2s
+            background-image: url(../img/arrow-red-prev-secondary.svg)
+        &--next
+          &:hover
+            transition: 0.2s
+            background-image: url(../img/arrow-red-next-secondary.svg)
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          &:hover
+            transition: 0.2s
+            background-image: url(../img/arrow-red-prev-secondary.svg)
+          &:active
+            -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+            -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+            box-shadow: 0px 0px 20px -1px #7fbed5ed
+        &--next
+          &:hover
+            transition: 0.2s
+            background-image: url(../img/arrow-red-next-secondary.svg)
+          &:active
+            -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+            -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+            box-shadow: 0px 0px 20px -1px #7fbed5ed
   a
     transition: 0.2s
     &:hover
@@ -163,6 +194,8 @@
       margin-bottom: 50px
       margin-top: 32px
     &-slider
+      &__text
+        letter-spacing: 0
       &__item
         max-width: 579px
         padding-left: 64px
@@ -172,7 +205,7 @@
         margin-right: 0
         margin-left: 0
   .activities
-    padding: 48px 0 50px 0
+    padding: 36px 0 50px 0
     &-wrapper
       flex-wrap: wrap
     &-card
@@ -241,9 +274,10 @@
       margin-top: 62px
     &__title
       &--contact
-        margin-top: 12px
+        margin-top: 7px
       &--message
         margin-top: -10px
+        margin-bottom: -4px
       &--legal
         padding-left: 0
   .conditions
@@ -451,6 +485,8 @@
   .modal
     &__dialog
       width: 100%
+      overflow: auto
+      max-height: 95vh
 @media ( max-width: 620px)
   .footer
     &__legal
@@ -596,8 +632,6 @@
       max-width: none
       width: 94%
       padding: 33px 30px
-      overflow: auto
-      max-height: 90vh
     &__info
       font-size: 11px
   .input
@@ -672,6 +706,7 @@
   .card
     width: 278px
   .reviews
+    padding: 8px 0 54px 0
     &-title
       padding: 0 38px 0 45px
     &-slider
